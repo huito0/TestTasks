@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: mypackage.TestCase
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.006 s <<< FAILURE! - in mypackage.TestCase
+mypackage.TestCase.myTestExpectRain  Time elapsed: 0.588 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Clouds> but was: <Rain>
+	at mypackage.TestCase.myTestExpectRain(TestCase.java:103)
+
