@@ -16,7 +16,7 @@ import java.util.Collection;
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.get;
 import static org.junit.jupiter.api.Assertions.*;
-//import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.*;
 
 
 @RunWith(Parameterized.class)
@@ -144,7 +144,7 @@ public class Test_API_Java1 {
                         get("http://api.openweathermap.org/data/2.5/weather?{payload1}{payload2}&{payload3}").
                         then().
                         contentType(ContentType.JSON).
-                        //body("cod",equalTo(200)).
+                        body("cod",equalTo(200)).
                         extract().
                         //path("main");
                                 response();
